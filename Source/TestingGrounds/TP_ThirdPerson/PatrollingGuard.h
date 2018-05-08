@@ -14,6 +14,9 @@ class TESTINGGROUNDS_API APatrollingGuard : public ATP_ThirdPersonCharacter
 {
 	GENERATED_BODY()	
 	
+public:
+	TArray<AActor*> GetPatrolPoints();
+
 protected:
 	UPROPERTY(EditInstanceOnly)
 		TArray<AActor*> PatrolPoints;
